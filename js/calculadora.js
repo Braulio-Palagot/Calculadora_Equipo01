@@ -38,7 +38,6 @@ function numero(xx) { //recoge el número pulsado en el argumento.
                 pantalla.innerHTML += xx;
                 x += xx
             }
-
         }
     }
     xi=0 //el número está iniciado y podemos ampliarlo.
@@ -109,8 +108,16 @@ function borradoTotal() {
     op="no" //borrar operación en curso.
 }
 
+function cuadrado(){
+    x=Math.pow(x,2); 
+    pantalla.innerHTML=x; 
+    op="no";
+    xi=1;   
+}
+
 //Esta es la funcion para llamar y declarar PI        
 function pi() {
     x = Math.PI;
     pantalla.innerHTML=x;
     }
+

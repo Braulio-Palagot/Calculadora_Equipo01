@@ -99,3 +99,9 @@ function borradoTotal() {
     ni=0 //indicador de número oculto a 0;
     op="no" //borrar operación en curso.
 }
+
+//Esta es la funcion para llamar y declarar PI        
+function pi() {
+    x = Math.PI;
+    pantalla.innerHTML=x;
+    }

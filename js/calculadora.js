@@ -16,7 +16,7 @@ function numero(xx) { //recoge el número pulsado en el argumento.
         pantalla.innerHTML=xx; //mostrar en pantalla
         x=xx; //guardar número
         if (xx == 'e') {
-            xx = 2.718281
+            xx = Math.E
         }
         if (xx==".") { //si escribimos una coma al principio del número
             pantalla.innerHTML="0."; //escribimos 0.
@@ -34,7 +34,7 @@ function numero(xx) { //recoge el número pulsado en el argumento.
         }
         //Resto de casos: escribir un número del 0 al 9:
         else {
-            if (x == 2.718281 || xx == 'e') {
+            if (x == Math.E || xx == 'e') {
                 pantalla.innerHTML = "ERROR";
                 x = 0;
             } else {

@@ -38,7 +38,6 @@ function numero(xx) { //recoge el número pulsado en el argumento.
                 pantalla.innerHTML += xx;
                 x += xx
             }
-
         }
     }
     xi=0 //el número está iniciado y podemos ampliarlo.
@@ -107,4 +106,11 @@ function borradoTotal() {
     coma=0; //reiniciar estado coma decimal
     ni=0 //indicador de número oculto a 0;
     op="no" //borrar operación en curso.
+}
+
+function cuadrado(){
+    x=Math.pow(x,2); 
+    pantalla.innerHTML=x; 
+    op="no";
+    xi=1;   
 }

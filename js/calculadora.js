@@ -1,6 +1,7 @@
 window.onload = function () { //Acciones tras cargar la página
     pantalla = document.getElementById("textoPantalla"); //elemento pantalla de salida
-    $(".avanzada").hide();
+    $(".cient").hide();
+    $("#bttnSimple").hide();
 }
 x = "0"; //número en pantalla
 valorDecimal = 0;
@@ -132,23 +133,23 @@ function cuadrado(){
 $(".prog").click(function () {
     if (coma == 0) {
         valorDecimal = parseInt(x);
-        if (this.value == "Decimal")
+        if (this.value == "Dec")
             pantalla.innerHTML = valorDecimal.toString(10);
-        else if (this.value == "Hexadecimal")
+        else if (this.value == "Hexa")
             pantalla.innerHTML = valorDecimal.toString(16);
-        else if (this.value == "Octal")
+        else if (this.value == "Octa")
             pantalla.innerHTML = valorDecimal.toString(8);
-        else if (this.value == "Binario")
+        else if (this.value == "Bin")
             pantalla.innerHTML = valorDecimal.toString(2);
     } else {
         valorFlotante = parseFloat(x);
-        if (this.value == "Decimal")
+        if (this.value == "Dec")
             pantalla.innerHTML = valorFlotante.toString(10);
-        else if (this.value == "Hexadecimal")
+        else if (this.value == "Hexa")
             pantalla.innerHTML = "No se puede convertir un valor flotante";
-        else if (this.value == "Octal")
+        else if (this.value == "Octa")
             pantalla.innerHTML = "No se puede convertir un valor flotante";
-        else if (this.value == "Binario")
+        else if (this.value == "Bin")
             pantalla.innerHTML = "No se puede convertir un valor flotante";
     }
 });
@@ -158,3 +159,15 @@ function pi() {
     x = Math.PI;
     pantalla.innerHTML=x;
     }
+
+$("#bttnAvanzada").click(function () {
+    $(".cient").show();
+    $("#bttnAvanzada").hide();
+    $("#bttnSimple").show();
+});
+
+$("#bttnSimple").click(function () {
+    $(".cient").hide();
+    $("#bttnAvanzada").show();
+    $("#bttnSimple").hide();
+});

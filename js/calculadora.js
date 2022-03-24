@@ -14,10 +14,10 @@ op = "no"; //operación en curso; "no" =  sin operación.
 function numero(xx) { //recoge el número pulsado en el argumento.
     if (x=="0" || xi==1  ) {	// inicializar un número,
         pantalla.innerHTML=xx; //mostrar en pantalla
-        x=xx; //guardar número
         if (xx == 'e') {
             xx = Math.E
         }
+        x=xx; //guardar número
         if (xx==".") { //si escribimos una coma al principio del número
             pantalla.innerHTML="0."; //escribimos 0.
             x=xx; //guardar número

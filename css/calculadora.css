@@ -1,14 +1,64 @@
-/*aspectos generales: bordes y color de fondo de calculadora*/
-.calculadora { border: 3px blue ridge; width: 600px;text-align: center;
-    background-color: #62b9b6; }
+/*Cambios generales de la calculadora*/
+.calculadora { 
+    border: 3px rgb(218, 170, 192) ridge; 
+    width: 1000px; 
+    height: 470px; 
+    text-align: center;
+    margin-left: 170px;
+    background-color:#fdb0dd ;
+}
+
+/* Titulo del backgroung */
+h1 {
+    text-align: center; 
+    font-size: 35px; 
+    font-family: monospace;
+    color: #da3294;
+}
 
 /*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
-#textoPantalla { width: 500px; border: 2px black solid; text-align: right;
-    position: relative; left: 30px;  padding: 5px 5px;
-    background-color: white; font-family: "courier new";
-    overflow: hidden;}
+#textoPantalla { 
+    width: 760px; 
+    border: 2px rgb(218, 170, 192) solid; 
+    text-align: right;
+    position: relative; 
+    left: 111px;  
+    padding: 10px 10px;
+    background-color: white; 
+    font-family: monospace; 
+    font-size: 30px;
+    overflow: hidden;
+    color: #da3294;
+    border-radius: 10px;
+}
 
 /*botones normales: anchura y margen*/
-.calculadora [type=button] { width: 95px; padding: 0;  }
+.calculadora [type=button] { 
+    font-size: 25px; 
+    width: 150px; 
+    padding: 0; 
+    background-color: #da3294; 
+    border-radius: 10px;
+    color:#ffffff; 
+    text-align: center;
+}
+
 /*botones especiales*/
-.calculadora input.largo { color:#2f4eab; width: 120px; }
+.calculadora input.largo { 
+    color:#ffdaf0; 
+    width: 100px; 
+}
+
+
+/*Botones de la calculadora cient*/
+.calculadora input.cient {
+
+    text-align: center;
+    font-size: 30px; 
+    width: 100px; 
+    padding: 0; 
+    background-color: #da3294; 
+    border-radius: 10px;
+    color:#ffffff; 
+    height: auto;
+}

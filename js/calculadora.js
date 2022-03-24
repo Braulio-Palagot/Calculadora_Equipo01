@@ -114,3 +114,10 @@ function cuadrado(){
     op="no";
     xi=1;   
 }
+
+//Esta es la funcion para llamar y declarar PI        
+function pi() {
+    x = Math.PI;
+    pantalla.innerHTML=x;
+    }
+

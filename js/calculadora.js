@@ -12,6 +12,9 @@ function numero(xx) { //recoge el número pulsado en el argumento.
     if (x=="0" || xi==1  ) {	// inicializar un número,
         pantalla.innerHTML=xx; //mostrar en pantalla
         x=xx; //guardar número
+        if (xx == 'e') {
+            xx = 2.718281
+        }
         if (xx==".") { //si escribimos una coma al principio del número
             pantalla.innerHTML="0."; //escribimos 0.
             x=xx; //guardar número
@@ -28,8 +31,13 @@ function numero(xx) { //recoge el número pulsado en el argumento.
         else if (xx=="." && coma==1) {}
         //Resto de casos: escribir un número del 0 al 9:
         else {
-            pantalla.innerHTML+=xx;
-            x+=xx
+            if (x == 2.718281 || xx == 'e') {
+                pantalla.innerHTML = "ERROR";
+                x = 0;
+            } else {
+                pantalla.innerHTML += xx;
+                x += xx
+            }
         }
     }
     xi=0 //el número está iniciado y podemos ampliarlo.
@@ -99,3 +107,17 @@ function borradoTotal() {
     ni=0 //indicador de número oculto a 0;
     op="no" //borrar operación en curso.
 }
+
+function cuadrado(){
+    x=Math.pow(x,2); 
+    pantalla.innerHTML=x; 
+    op="no";
+    xi=1;   
+}
+
+//Esta es la funcion para llamar y declarar PI        
+function pi() {
+    x = Math.PI;
+    pantalla.innerHTML=x;
+    }
+
